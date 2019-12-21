@@ -49,5 +49,5 @@ def eval_reg():
 if __name__ == '__main__':
     min_max()
     direct_call()
-    eval_reg()
+    # eval_reg()
     octave.close()
