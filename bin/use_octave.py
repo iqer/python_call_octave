@@ -4,8 +4,8 @@ import sys
 from oct2py import octave
 
 
-octave.addpath(r'../static_file')
-# octave.addpath(r'/home/cqh/Documents/PythonCallOctave/static_file')
+octave.addpath(r'../lib')
+# octave.addpath(r'/home/cqh/Documents/PythonCallOctave/lib')
 PY2 = sys.version_info[0] == 2
 
 
