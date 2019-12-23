@@ -18,7 +18,7 @@ def min_max():
     print('Demo1\nCall the function in .m file by using the name of function')
     a, b = octave.min_max([[1, 2], [3, 4]], [[1, 2], [3, 4]], nout=2)
     if PY2:
-        print ('a={}, b={}'.format(a, b))
+        print('a={}, b={}'.format(a, b))
     else:
         eval("print(f'a={a}, b={b}')")
 
@@ -38,7 +38,7 @@ def eval_reg():
     Y = [88, 85, 88, 91, 92, 93, 93, 95, 96, 98, 97, 96, 98, 99, 100, 102]
     yb, k = octave.regression(x, Y, nout=2)
     if PY2:
-        print ('yb={}, k={}'.format(yb, k))
+        print('yb={}, k={}'.format(yb, k))
     else:
         eval("print(f'yb={yb}, k={k}')")
     print('执行脚本call_regression')
