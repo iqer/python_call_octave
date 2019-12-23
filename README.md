@@ -1,6 +1,6 @@
 ## Method to use 
 OS:Ubuntu 18.04
-/PythonCallOctave/bin/run.sh
+sudo docker pull registry-intl.cn-shanghai.aliyuncs.com/arthur_chen/ubuntu_with_tools:0.1.0
 
 ## Q&A
 ```
