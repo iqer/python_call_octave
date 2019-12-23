@@ -14,7 +14,6 @@ PY2 = sys.version_info[0] == 2
 # by the way,when calling function by dot operator, 'nout' tell python the number n of output arguments
 
 
-
 def min_max():
     print('Demo1\nCall the function in .m file by using the name of function')
     a, b = octave.min_max([[1, 2], [3, 4]], [[1, 2], [3, 4]], nout=2)
@@ -36,8 +35,8 @@ def eval_reg():
     # pkg is the package manager of octave like apt in ubuntu
     octave.eval('pkg load statistics')
     x = [143, 145, 146, 147, 149, 150, 153, 154, 155, 156, 157, 158, 159, 160, 162, 164]
-    y = [88, 85, 88, 91, 92, 93, 93, 95, 96, 98, 97, 96, 98, 99, 100, 102]
-    yb, k = octave.regression(x, y, nout=2)
+    Y = [88, 85, 88, 91, 92, 93, 93, 95, 96, 98, 97, 96, 98, 99, 100, 102]
+    yb, k = octave.regression(x, Y, nout=2)
     if PY2:
         print ('yb={}, k={}'.format(yb, k))
     else:
@@ -49,5 +48,5 @@ def eval_reg():
 if __name__ == '__main__':
     min_max()
     direct_call()
-    # eval_reg()
+    eval_reg()
     octave.close()
