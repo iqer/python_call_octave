@@ -34,8 +34,10 @@ COPY py_to_octave.tar.gz /
 RUN tar xzf py_to_octave.tar.gz && \
 mkdir -p /datayes/mercury && \
 mv py_to_octave /datayes/mercury/py_to_octave && \
-rm -f py_to_octave.tar.gz && \
-cd /datayes/mercury/py_to_octave/pkg && \
+rm -f py_to_octave.tar.gz
+
+# fix dependency for octave-engine
+RUN cd /datayes/mercury/py_to_octave/pkg && \
 octave && \
 pkg install io-2.4.13.tar.gz && \
 pkg install statistics-1.4.1.tar.gz && \
