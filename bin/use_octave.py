@@ -5,7 +5,7 @@ from oct2py import octave
 
 
 octave.addpath(r'../lib')
-# octave.addpath(r'/home/cqh/Documents/PythonCallOctave/lib')
+# octave.addpath(r'/home/cqh/Documents/py_to_octave/lib')
 PY2 = sys.version_info[0] == 2
 
 
