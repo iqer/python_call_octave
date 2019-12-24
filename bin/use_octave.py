@@ -27,7 +27,6 @@ def direct_call():
 
     print('\nDemo2.\nDirect Eval octave method by file name\n')
     octave.eval('call')
-    print('\nDemo2.\nDirect Call octave method by its file name\n')
 
 
 def eval_reg():
